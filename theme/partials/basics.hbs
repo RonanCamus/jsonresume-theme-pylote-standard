@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="card__header">
+        <h5>
+            Coordonées
+        </h5>
+    </div>
+    <div class="card__body">
+        <div class="renames">
+            <div class="rename__item">
+                <div class="rename__title">
+                    <h6>Mail</h6>
+                    <span class="subtitle-1">{{ resume.basics.email }}</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="renames">
+            <div class="rename__item">
+                <div class="rename__title">
+                    <h6>Réseaux sociaux</h6>
+                </div>
+            </div>
+            {{#each resume.basics.profiles}}
+            <div class="rename__item">
+                <div class="rename__avatar rename__avatar--bordered">
+                    {{{svg network}}}
+                </div>
+                <div class="rename__title">
+                    <h6>
+                        <a href="{{ url }}" target="_blank">{{ network }}</a>
+                    </h6>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <style>{{{style}}}</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"
+        integrity="sha512-OTbGFYPLe3jhy4bUwbB8nls0TFgz10kn0TLkmyA+l3FyivDs31zsXCjOis7YGDtE2Jsy0+fzW+3/OVoPVujPmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>{{{javascript}}}</script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header>
+                {{> header }}
+            </header>
+
+            <div class="grid-d-8">
+                <section>
+                    {{> skills }}
+                </section>
+                <section>
+                    {{> work }}
+                </section>
+                <section class="last">
+                    {{> education }}
+                </section>
+            </div>
+            <div class="grid-d-4">
+                <section>
+                    {{> preference }}
+                </section>
+                <section>
+                    {{> basics }}
+                </section>
+                <section class="last">
+                    {{> language }}
+                </section>
+                <div id="logoPylote">{{{svg "pylote"}}}</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<div class="card">
+  <div class="card__header">
+    <h5>
+      Technos
+    </h5>
+    <span class="subtitle-1">par années d'expérience</span>
+  </div>
+  <div class="card__body">
+    <div class="primary-skills">
+      {{#each resume.favoriteSkills }}
+      <div class="grid-d-3 grid-t-3 grid-tl-3 grid-m-6">
+        <div class="graph">
+          <div id="gaugChart_{{@index}}" class="gaugeChart" data-title="{{ skillToTitle level }}"
+            data-color="{{#ifOdd @index }} #C489FF {{ else }} #8B2DE9 {{/ifOdd}}" data-value="{{multiply level 10}}">
+          </div>
+          <h6>
+            {{ name }}
+          </h6>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+    <div class="secondary-skills">
+      {{#each resume.skills }}
+      <div class="chips chips--grey">
+        <span class="chips__content">
+          {{ name }}
+        </span>
+        <span class="chips__badge">
+          {{ level }}
+        </span>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+@import "_variable";
+
+.card {
+    background-color: $grey-900;
+    color: $white;
+    overflow: hidden;
+    position: relative;
+    border-radius: $radius;
+    padding: $padding-y $padding-x $padding-y $padding-x;
+
+    .card__header {
+        padding: 0 0 $padding-y 0;
+    }
+
+}

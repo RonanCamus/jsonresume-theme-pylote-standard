@@ -1,0 +1,84 @@
+@import "_variable";
+
+.chips {
+    margin: calc($margin / 2) 0 calc($margin / 2) 0;
+    height: 32px;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius;
+
+    &.chips--big {
+        font-size: 26px;
+        padding: 20px 15px 20px 15px;
+        border-radius: 20px;
+    }
+
+    // .chips__content {}
+
+    .chips__badge {
+        width: 24px;
+        height: 24px;
+        margin-left: 5px;
+        margin-right: -5px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    &.chips--dark {
+        background-color: $dark;
+
+        .chips__content {
+            color: $white;
+        }
+
+        .chips__badge {
+            background-color: $dark;
+            color: $dark;
+        }
+    }
+
+
+    &.chips--grey {
+        background-color: $grey-800;
+
+        .chips__content {
+            color: $grey-100;
+        }
+
+        .chips__badge {
+            background-color: $grey-400;
+            color: $grey-900;
+        }
+    }
+
+    &.chips--primary {
+        background-color: $primary-100;
+
+        .chips__content {
+            color: $primary-500;
+        }
+
+        .chips__badge {
+            background-color: $primary-100;
+        }
+    }
+
+    &.chips--secondary {
+        background-color: $secondary-200;
+
+
+        .chips__content {
+            color: $primary-500;
+        }
+
+        .chips__badge {
+            background-color: $secondary-200;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<h1>
+    {{ resume.basics.name }} </h1>
+<h2>
+    {{#each resume.meta.freelance.professions }}
+    {{#if @last}}
+    {{ this }}
+    {{else}}
+    {{ this }} -
+    {{/if}}
+    {{/each}}
+</h2>
+
+<div class="chips chips--big chips--dark">
+    <span class="chips__content">
+        {{ resume.meta.freelance.seniority }}
+    </span>
+</div>
+
+<div class="chips chips--big chips--secondary">
+    <span class="chips__content">
+        {{ resume.meta.freelance.rate }}€/jour
+    </span>
+</div>
+
+{{#if resume.meta.freelance.openToCdi}}
+<div class="chips chips--big chips--primary">
+    <span class="chips__content">
+        Ouvert aux CDI
+    </span>
+</div>
+{{/if}}

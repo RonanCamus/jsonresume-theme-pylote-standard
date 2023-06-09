@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card__header">
+    <h5>
+      Formations
+    </h5>
+  </div>
+  <div class="card__body">
+    <div class="renames">
+      {{#each resume.education }}
+      <div class="rename__item rename__item--no-padding">
+        <div class="rename__avatar rename__avatar--bordered">
+          {{{svg "education"}}}
+        </div>
+        <div class="rename__title">
+          <h6>
+            {{ instituion }}
+          </h6>
+          <span class="subtitle-1">
+            {{ studyType }}
+          </span>
+        </div>
+        <small class="rename__date">
+          {{moment startDate }}
+          -
+          {{#if endDate}} {{moment endDate}} {{^}} En cours {{/if}}
+        </small>
+      </div>
+
+      {{#not @last}}
+      <hr>
+      {{/not}}
+      {{/each}}
+    </div>
+  </div>
+</div>

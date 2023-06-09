@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card__header">
+        <h5>
+            Langues
+        </h5>
+    </div>
+    <div class="card__body">
+        <div class="renames">
+            {{#each resume.basics.languages}}
+            <div class="rename__item rename__item--no-padding">
+                <div class="rename__title">
+                    <h6>
+                        {{ language }}
+                    </h6>
+                    <span class="subtitle-1">
+                        {{ fluency }}
+                    </span>
+                </div>
+            </div>
+            {{#not @last}}
+            <hr>
+            {{/not}}
+            {{/each}}
+        </div>
+    </div>
+</div>

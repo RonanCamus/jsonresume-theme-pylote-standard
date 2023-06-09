@@ -1,0 +1,128 @@
+@import "_variable";
+// @import"_font";
+
+h1 {
+    color: $primary-100;
+    line-height: 77px;
+    font-family: 'Poppins';
+    font-size: 89px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    color: $primary-200;
+    line-height: 42px;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    margin: 1em 0 .5em;
+}
+
+h3 {
+    color: $primary-100;
+    line-height: 29px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+h4 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: $font-weight;
+    line-height: 48px;
+}
+
+h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: $font-weight;
+    line-height: 30px;
+}
+
+
+h6 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: $font-weight;
+    line-height: 28px;
+}
+
+p {
+    $padding-x: 56px;
+
+    font-size: 14px;
+    line-height: 22px;
+    color: $grey-500;
+    padding: $padding-y $padding-x 0 $padding-x;
+    margin: 0;
+}
+
+hr {
+    margin: 0px;
+    flex-shrink: 0;
+    border-width: 0px 0px thin;
+    border-style: solid;
+    border-color: $devider;
+    opacity: calc($transparent-500) / 100;
+    margin: $margin-y 0 $margin-y 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.subtitle-1 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: $font-weight;
+    color: $grey-500;
+}
+
+.subtitle-2 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: $font-weight;
+    color: $grey-500;
+}
+
+@media (max-width: $media-mobile-max-width) {
+    p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    h5 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    h6 {
+        font-size: 17px;
+        line-height: 26px;
+    }
+}

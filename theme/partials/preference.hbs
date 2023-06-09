@@ -1,0 +1,71 @@
+<div class="card">
+  <div class="card__header">
+    <h5>
+      Préférences
+    </h5>
+  </div>
+  <div class="card__body">
+    <div class="renames">
+      {{#each resume.meta.freelance.preferences}}
+      <div class="rename__item">
+        <div class="box-emoji">
+          <div class="emoji">
+            {{#if (eq @key "missionDuration" )}}
+            <div class="circle purple"></div>
+            {{/if}}
+
+            {{#if (eq @key "remoteWork")}}
+            <div class="circle green"></div>
+            {{/if}}
+
+            {{#if (eq @key "daysPerWeek")}}
+            <div class="circle yellow"></div>
+            {{/if}}
+
+            {{#if (eq @key "workAreas")}}
+            <div class="circle blue"></div>
+            {{/if}}
+          </div>
+        </div>
+        <div class="rename__title">
+          <span class="subtitle-2">
+            {{#if (eq @key "missionDuration")}} Temps de travail {{/if}}
+            {{#if (eq @key "remoteWork")}} Durée de mission {{/if}}
+            {{#if (eq @key "daysPerWeek")}} Lieu de travail {{/if}}
+            {{#if (eq @key "Localisation")}} {{@key}} {{/if}}
+          </span>
+          <h6>
+            {{ @this }}
+          </h6>
+        </div>
+      </div>
+      {{/each }}
+      <div class="rename__item">
+        <div class="box-emoji">
+          <div class="emoji">
+            <div class="circle blue"></div>
+          </div>
+        </div>
+
+        <div class="rename__title">
+          <span class="subtitle-2">
+            Localisation
+          </span>
+          <h6>
+            {{#with (split resume.basics.location.address ',')}}
+            {{this.[0]}}
+            {{#gt (length this) 1 }}
+            , {{this.[1]}}
+            {{/gt}}
+
+            {{#gt (length this) 2 }}
+            <span class="subtitle-2">+ {{ subtract (length this) 2 }}</span>
+            {{/gt}}
+            {{/with}}
+          </h6>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

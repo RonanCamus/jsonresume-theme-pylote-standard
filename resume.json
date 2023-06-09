@@ -1,0 +1,148 @@
+{
+  "awards": [],
+  "basics": {
+    "email": "hanst115@freelance.pylote.io",
+    "image": "https://storage.pylote.io/images/avatar+(113).png",
+    "label": ["dev_back-end", "dev_front-end"],
+    "languages": [
+      {
+        "fluency": "Bilingue ou langue natale",
+        "language": "Francais"
+      }
+    ],
+    "location": {
+      "address": "Nouvelle-Aquitaine"
+    },
+    "name": "Hans Tapia",
+    "phone": "0987654321",
+    "profiles": [
+      {
+        "url": "https://github.com/fndkls",
+        "username": "dhjq",
+        "network": "GitHub"
+      },
+      {
+        "url": "https://stackoverflow.com/users/20070303/ffze",
+        "username": "feznsdm",
+        "network": "Stack Overflow"
+      }
+    ],
+    "summary": "Description à venir",
+    "url": "À venir"
+  },
+  "certificates": [
+    {
+      "name": "chuz",
+      "date": 2012,
+      "url": "",
+      "issuer": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Edu 1",
+      "endDate": "2017",
+      "url": "",
+      "studyType": "Bac",
+      "startDate": "2017"
+    },
+    {
+      "institution": "fq",
+      "endDate": "2018",
+      "url": "",
+      "studyType": "cq",
+      "startDate": "2018"
+    }
+  ],
+  "interests": [],
+  "meta": {
+    "firstName": "Hans",
+    "freelance": {
+      "availabilityDate": "2023-11-23",
+      "available": false,
+      "openToCdi": false,
+      "preferences": {
+        "daysPerWeek": "5j/semaine",
+        "missionDuration": "+6 mois",
+        "remoteWork": "Indifférent"
+      },
+      "professions": ["Dev Back-end", "Dev Front-end"],
+      "rate": "250",
+      "seniority": "Master (+10 ans)"
+    },
+    "lastName": "Tapia"
+  },
+  "projects": [],
+  "skills": [
+    {
+      "level": "5",
+      "name": ".NET Compact Framework",
+      "keywords": []
+    },
+    {
+      "level": "4",
+      "name": "1-4 Units",
+      "keywords": []
+    },
+    {
+      "level": "3",
+      "name": "10-Key Typing",
+      "keywords": []
+    },
+    {
+      "level": "2",
+      "name": "1031 Exchanges  ",
+      "keywords": []
+    },
+    {
+      "level": "1",
+      "name": "1-Wire",
+      "keywords": []
+    }
+  ],
+  "work": [
+    {
+      "name": "Pylote",
+      "summary": "",
+      "position": "Développeur Full Stack",
+      "endDate": null,
+      "startDate": "2022-09-01T00:00:00.000+00:00"
+    },
+    {
+      "name": "POIJSN",
+      "summary": "hfioezmhfoihdsim",
+      "position": "Technicien Systèmes et Réseaux",
+      "endDate": "2021-10-01T00:00:00.000+00:00",
+      "startDate": "2021-09-01T00:00:00.000+00:00"
+    },
+    {
+      "name": "Jdqpq",
+      "summary": "Apprentissage HTML Apprentissage CSS Apprentissage Bootstrap",
+      "position": "Développeur web",
+      "endDate": "2020-01-01T00:00:00.000+00:00",
+      "startDate": "2020-01-01T00:00:00.000+00:00"
+    }
+  ],
+  "favoriteSkills": [
+    {
+      "level": "9",
+      "name": "JavaScript",
+      "keywords": ["favorite"]
+    },
+    {
+      "level": "8",
+      "name": "HTML5",
+      "keywords": ["favorite"]
+    },
+    {
+      "level": "7",
+      "name": "css3",
+      "keywords": ["favorite"]
+    },
+    {
+      "level": "6",
+      "name": "c#",
+      "keywords": ["favorite"]
+    }
+  ]
+}

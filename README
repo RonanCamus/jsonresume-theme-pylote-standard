@@ -1,0 +1,15 @@
+PREREQUIS :
+Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur votre système :
+Node.js
+Yarn (ou npm)
+
+INSTALLATION :
+Installez les dépendances en exécutant la commande suivante : yarn install.
+
+CONFIGURATION :
+L'image d'arrière-plan pour le thème se trouve dans ./theme/public/bglogo.png.
+
+UTILISATION :
+Pour lancer un serveur local et afficher votre CV dans le navigateur, exécutez la commande suivante : yarn start.
+Pour exporter votre CV au format PDF, utilisez la commande suivante : yarn export:pdf. Le fichier PDF sera nommé "resume.pdf".
+Pour exporter votre CV au format HTML, utilisez la commande suivante : yarn export:html. Le fichier HTML sera nommé "resume.html".
