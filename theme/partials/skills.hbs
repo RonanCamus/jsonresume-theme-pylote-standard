@@ -6,9 +6,11 @@
     <span class="subtitle-1">par années d'expérience</span>
   </div>
   <div class="card__body">
+    {{#if (gt (length resume.favoriteSkills) 0)}}
     <div class="primary-skills">
       {{#each resume.favoriteSkills }}
-      <div class="grid-d-3 grid-t-3 grid-tl-3 grid-m-6">
+      <div
+        class="{{#if (eq ../resume.favoriteSkills.length 1)}} grid-d-12 grid-t-12 grid-tl-12 grid-m-12{{else if (eq ../resume.favoriteSkills.length 2)}} grid-d-6 grid-t-6 grid-tl-6 grid-m-6{{else if (eq ../resume.favoriteSkills.length 3)}} grid-d-4 grid-t-4 grid-tl-4 grid-m-4{{else}} grid-d-3 grid-t-3 grid-tl-3 grid-m-3{{/if}}">
         <div class="graph">
           <div id="gaugChart_{{@index}}" class="gaugeChart" data-title="{{ skillToTitle level }}"
             data-color="{{#ifOdd @index }} #C489FF {{ else }} #8B2DE9 {{/ifOdd}}" data-value="{{multiply level 10}}">
@@ -20,6 +22,7 @@
       </div>
       {{/each}}
     </div>
+    {{/if}}
 
     <div class="secondary-skills">
       {{#each resume.skills }}
