@@ -24,7 +24,11 @@ body {
 }
 
 main {
+    background: -webkit-linear-gradient(rgb(64, 3, 111) 5.97%, rgb(39, 0, 69) 34.51%, rgba(56, 0, 99, 0) 94.35%);
+    background: -moz-linear-gradient(rgb(64, 3, 111) 5.97%, rgb(39, 0, 69) 34.51%, rgba(56, 0, 99, 0) 94.35%);
+    background: -o-linear-gradient(rgb(64, 3, 111) 5.97%, rgb(39, 0, 69) 34.51%, rgba(56, 0, 99, 0) 94.35%);
     background: linear-gradient(rgb(64, 3, 111) 5.97%, rgb(39, 0, 69) 34.51%, rgba(56, 0, 99, 0) 94.35%);
+
     height: 680px;
     width: 100%;
     margin-left: auto;
@@ -53,9 +57,9 @@ header {
     text-align: center;
 }
 
-.secondary-skills {
-    padding-top: $padding-y;
-    display: block;
+.primary-skills {
+    height: 218px;
+    padding-bottom: $padding-y;
 }
 
 @media print {
